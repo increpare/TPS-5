@@ -1,0 +1,28 @@
+:DATA
+a
+b
+c
+d
+c
+e
+f
+g
+c
+c
+d
+c
+a
+
+:TPS1
+push
+
+:TPS2
+in
+
+:TPS3
+in
+
+:SPECIFICATIONS
+insert an 'a' after every 'c'
+
+no, really!

@@ -1,11 +1,5 @@
 import haxegon.*;
 
-enum State {
-    Regular;
-    If;
-    While;
-}
-
 class TPS {	
     public var sim : Simulator;
 
@@ -13,19 +7,21 @@ class TPS {
     public var data : Buffer;
     public var stack : Buffer;
 
-    public var standardTarget:Int;
-    public var altTarget:Int;
+    public var childTarget:Int;
 
-    public var target:Int=0;
-    var state : State;
+    public var target : Int = 0;
+    public var state : State;
+    
+    public var contextLock:Bool = false;
 
 
-//don't forget to set standardTarget + altTarget!
-    public function new(sim:Simulator, data:Buffer,script:Buffer,stack:Buffer){
+//don't forget to set childTarget
+    public function new(sim:Simulator, data:Buffer,script:Buffer,stack:Buffer, childTarget:Int){
         this.sim = sim;
         this.script = script;
         this.data = data;
         this.stack = stack;
+        this.childTarget = childTarget;
         Reset();
     }
 
@@ -91,28 +87,66 @@ class TPS {
         return result.toString();
     }
 
+    public function Locked():Bool {
+        return contextLock || state != State.Regular;
+    }
+
     public function tick(){
         if (target==1){
             var t = data;
             data = stack;
             stack = t;
         }
+
+        if (state == State.While2){
+            state = State.While;
+        }
+
         if (state == State.If)
         {
             state = State.Regular;
             if (data.get(data.pos) != script.get(script.pos))
             {
-                script.pos +=2;
+                script.ProgressCursor();
+                script.ProgressCursor();
+                return;
+            } 
+        } else if (state == State.IfN)
+        {
+            state = State.Regular;
+            if (data.get(data.pos) == script.get(script.pos))
+            {
+                script.ProgressCursor();
+                script.ProgressCursor();
                 return;
             } 
         } else if (state == State.While)
         {
-            if (data.get(data.pos) != script.get(script.pos-1))
+            if (data.get(data.pos) != script.get(script.pos))
             {
                 state = State.Regular;
-                script.pos += 1;
+                script.ProgressCursor();
+                script.ProgressCursor();
+                return;
             }         
-        }
+            else {      
+                script.ProgressCursor();    
+                state = State.While2;      
+            }
+        }  else if (state == State.WhileN)
+        {
+            if (data.get(data.pos) == script.get(script.pos))
+            {
+                state = State.Regular;
+                script.ProgressCursor();
+                script.ProgressCursor();
+                return;
+            }         
+            else {      
+                script.ProgressCursor();    
+                state = State.While2N;      
+            }
+        } 
          
         var t : String = script.get(script.pos);
         if (t == "EXEC")
@@ -120,20 +154,25 @@ class TPS {
             t = data.get(data.pos);
         }
 
+
         switch (t)
         {
             case "PREV":
                 if (data.pos>0){
-                    data.pos--;
+                    data.RegressCursor();
                 }
             case "NEXT":
                 if (data.pos<data.length-1){
-                    data.pos++;
+                    data.ProgressCursor();
                 }
             case "TOP":
                 data.pos=0;
             case "BOTTOM":
-                data.pos=data.length-1;
+                    if (data.length>0){
+                        data.pos=data.length-1;
+                    } else {
+                        data.pos=0;
+                    }
             case "PUSH": 
                 var item = data.get(data.pos);
                 if (item!=""){
@@ -146,28 +185,35 @@ class TPS {
                 }                
             case "REMOVE":
                 data.removeAt(data.pos);
-                if (data.pos>=data.length){
+                if (data.pos>=data.length&&data.length>0){
                     data.pos=data.length-1;
                 }
             case "END":
-                script.pos=-1;
+                sim.curTarget=-1;
             case "IF":
-                state = State.If;
+                if (data.get((data.pos+1)%data.length) != script.get((script.pos+1)%script.length))
+                {
+                    script.ProgressCursor();
+                } 
+            case "IFN":
+                if (data.get((data.pos+1)%data.length) != script.get((script.pos+1)%script.length))
+                {
+                    script.ProgressCursor();
+                } 
             case "WHILE":
                 state = State.While;
-                script.pos++;
+                script.ProgressCursor();
+            case "WHILEN":
+                state = State.WhileN;
+                script.ProgressCursor();
             case "EXEC":
                 Error("tried to call exec recursively");
-            //case "TICK":
-            //    sim.curTarget=target==0?standardTarget:altTarget;
-            //    sim.curTargetStack.push(sim.curTarget);
-            case "SWITCH":
-                target = 1-target;
-                if (target==0){
-                    var t = data;
-                    data = stack;
-                    stack = t;
+            case "TICK":
+                if (childTarget>=0){
+                    sim.curTarget=childTarget;
                 }
+            case "SWITCH":
+                sim.swapStacks(data,stack);               
             case "SAVE":
                 data.storedPos=data.pos;
             case "RESUME":
@@ -175,17 +221,25 @@ class TPS {
                     data.pos=data.storedPos;
                 }    
             case "IN":         
-                sim.curTarget=target==0?standardTarget:altTarget;
-                sim.curTargetStack.push(sim.curTarget);
+                if (childTarget>=0){
+                    sim.tps[childTarget].contextLock=true;
+                    sim.curTarget=childTarget;    
+                }
             case "OUT":
-                if (sim.curTargetStack.length>1){
-                    sim.curTargetStack.pop();
-                    sim.curTarget = sim.curTargetStack[sim.curTargetStack.length-1];
+                if (sim.curTarget<2){
+                    contextLock=false;
+                    sim.curTarget++;
+                    var targetTPS = sim.tps[sim.curTarget];
+                    targetTPS.script.ProgressCursor();
                 }
         }
-        script.pos++;
-        if (script.pos>=script.length){
-            script.pos=script.length-1;
+
+        if (state==State.While || state==State.WhileN){
+
+        } else if (state == State.While2 || state == State.While2N){
+            script.RegressCursor();
+        } else {
+            script.ProgressCursor();        
         }
 
         if (target==1){

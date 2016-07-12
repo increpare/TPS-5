@@ -1,0 +1,28 @@
+:DATA
+a
+b
+c
+d
+
+:TPS1
+push
+remove
+push
+remove
+push
+remove
+push
+remove
+switch
+end
+
+:TPS2
+in
+
+:TPS3
+in
+
+:SPECIFICATIONS
+reverse the input
+
+no, really!

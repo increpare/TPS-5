@@ -13,7 +13,7 @@ The \emph{TPS-5} is a versatile system for manipulating tokens.   It can store i
 
 There are seven buffers - one (\emph{DATA}) is for public input/output, to be read by external software, the remaining six are private buffers for your programs.  Three (\emph{TPS\#1},\emph{TPS\#2},\emph{TPS\#3}) are where you will write your code, and the other three (\emph{STACK\#1},\emph{STACK\#2},\emph{STACK\#3}) are stacks for temporary storage.  All six of the interal buffers have individual TPS microcontrollers.
 
-A TPS microcontroller has access to three buffers - data, script, and stack.  At any one time only one TPS microcontroller can be active - a TPS microcontroller can give control to the TPS that runs on its data buffer (if there is one - DATA is not interpreted by any microcontroller), or it can relinquish control back its parent controller.
+A TPS microcontroller has access to three buffers - data, script, and stack.  At any one time only one TPS microcontroller can be active - a TPS microcontroller can give control to the TPS that runs on its data buffer (if there is one - DATA is not interpreted by any microcontroller), or it can relinquish control back its parent controller. The controller supports 16 instructions.
 
 
 \section{Instructions}
@@ -31,7 +31,7 @@ Halts termination of program.
 Looks at the current child token, and executes it (without changing context).
 
 \item [IF]
-The two tokens following \emph{IF} are called the \emph{antecedent} and the \emph{consequent} respectively.  If the currently selected child token is the same as the \emph{antecedent}, then control goes to the consequent, otherwise control goes to the token one past the consequent.
+The two tokens following \emph{IF} are called the \emph{antecedent} and the \emph{consequent} respectively.  If the currently selected child token is the same as the \emph{antecedent}, then control goes to the consequent, otherwise control goes to the token one past the consequent.  \emph{IF} is an \emph{atomic} operation. While it can take several ticks, control cannot be taken from the TPS during this time.
 
 \item [IN]
 Transfers control to a child TPS, if one exists.
@@ -67,7 +67,7 @@ Switches the buffer and the stack.
 Moves the child cursor to the first place.
 
 \item [WHILE]
-As for \emph{IF}, keeps executing the consequent so long as the antecedent is the same as the currently highlighted child token. If this is no longer true, control moves to the token after the consequent.
+As for \emph{IF}, keeps executing the consequent so long as the antecedent is the same as the currently highlighted child token. If this is no longer true, control moves to the token after the consequent.  \emph{WHILE} is an \emph{atomic} instruction. While it can take several ticks, control cannot be taken from the TPS during this time.
 
 
 \item

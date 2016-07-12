@@ -15,20 +15,26 @@ fuck
 end
 
 :TPS1
-while
-fuck
-remove
-if
-end
-end
+whilen
+cat
 next
+push
+remove
+switch
 
 :TPS2
-in
+tick
+tick
+tick
+ifn 
+whilen
+save
+resume
 
 :TPS3
 in
 
 :SPECIFICATIONS
-Remove profanity from the 
-data.
+move all the cats to the end
+
+no, really!

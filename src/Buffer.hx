@@ -4,6 +4,19 @@ class Buffer {
 	public var pos:Int;
 	public var storedPos:Int;
 
+    public function ProgressCursor(){
+    	pos++;
+    	if (pos>=dat.length){
+    		pos=0;
+    	}    
+    }
+    public function RegressCursor(){
+    	pos--;
+    	if (pos<0 && dat.length>0){
+    		pos = dat.length-1;
+    	}
+    }
+
 	public function toString():Array<String> {
 		var sb1:StringBuf = new StringBuf();
 		var sb2:StringBuf = new StringBuf();
@@ -53,7 +66,7 @@ class Buffer {
 		}
 
 	public function new(_capacity:Int, ?_dat:Array<String> ){			
-		storedPos=-1;
+		storedPos = 0;
 		capacity=_capacity;
 		if (_dat==null){
 			dat = new Array<String>();
