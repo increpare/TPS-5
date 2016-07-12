@@ -19,11 +19,11 @@ class Data {
 	public static var width:Int = 0;
 	public static var height:Int = 0;
 	
-	public static function loadtext(textfile:String):Array<String> {
+	public static function loadtext(textfile:String):String {
 		tempstring = Assets.getText("data/text/" + textfile + ".txt");
 		tempstring = replacechar(tempstring, "\r", "");
 		
-		return tempstring.split("\n");
+		return tempstring;
 	}
 	
 	@:generic

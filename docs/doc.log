@@ -1,0 +1,119 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.12.3)  12 JUL 2016 04:15
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**doc.tex
+(./doc.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 51 languages loaded.
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/opt/local/share/texmf-texlive/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/opt/local/share/texmf-texlive/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count87
+\c@Blindtext=\count88
+\c@blind@countparstart=\count89
+\blind@countxx=\count90
+\blindtext@numBlindtext=\count91
+\blind@countyy=\count92
+\c@blindlist=\count93
+\c@blindlistlevel=\count94
+\c@blindlist@level=\count95
+\blind@listitem=\count96
+\c@blind@listcount=\count97
+\c@blind@levelcount=\count98
+\blind@mathformula=\count99
+\blind@Mathformula=\count100
+\c@blind@randomcount=\count101
+\c@blind@randommax=\count102
+\c@blind@pangramcount=\count103
+\c@blind@pangrammax=\count104
+)
+(/opt/local/share/texmf-texlive/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2013/12/19 v3.12 KOMA-Script KOMA-Script package (extend oth
+er classes with features of KOMA-Script classes)
+
+(/opt/local/share/texmf-texlive/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/opt/local/share/texmf-texlive/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/opt/local/share/texmf-texlive/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
+
+Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+LaTeX Info: Redefining \textsubscript on input line 1150.
+) (./doc.aux)
+\openout1 = `doc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 8.
+ [1
+
+{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./doc.aux) )
+ 
+Here is how much of TeX's memory you used:
+ 931 strings out of 493678
+ 14346 string characters out of 6149272
+ 85939 words of memory out of 5000000
+ 4305 multiletter control sequences out of 15000+600000
+ 7626 words of font info for 27 fonts, out of 8000000 for 9000
+ 846 hyphenation exceptions out of 8191
+ 35i,6n,23p,448b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+</opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt
+/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/local
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/local/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/local/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on doc.pdf (2 pages, 68823 bytes).
+PDF statistics:
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

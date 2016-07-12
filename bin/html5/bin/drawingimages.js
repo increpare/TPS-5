@@ -23,6 +23,42 @@ ApplicationMain.create = function() {
 	ApplicationMain.preloader.create(ApplicationMain.config);
 	var urls = [];
 	var types = [];
+	urls.push("data/fonts/04b11/04b11.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/04b11/04b11_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/c64/c64.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/c64/c64_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/comic/comic.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/comic/comic_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/crypt/crypt.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/crypt/crypt_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/default/default.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/default/default_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/dos/dos.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/dos/dos_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/ganon/ganon.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/ganon/ganon_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/nokia/nokia.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/nokia/nokia_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/oldenglish/oldenglish.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/oldenglish/oldenglish_0.png");
+	types.push("IMAGE");
 	urls.push("data/fonts/opensans/opensans.eot");
 	types.push("BINARY");
 	urls.push("Open Sans");
@@ -31,6 +67,38 @@ ApplicationMain.create = function() {
 	types.push("BINARY");
 	urls.push("data/fonts/opensans/opensans.woff2");
 	types.push("BINARY");
+	urls.push("data/fonts/pixel/pixel.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/pixel/pixel_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/pressstart/pressstart.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/pressstart/pressstart_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/retrofuture/retrofuture.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/retrofuture/retrofuture_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/roman/roman.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/roman/roman_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/special/special.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/special/special_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/thin/thin.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/thin/thin_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/tiny/tiny.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/tiny/tiny_0.png");
+	types.push("IMAGE");
+	urls.push("data/fonts/yoster/yoster.fnt");
+	types.push("TEXT");
+	urls.push("data/fonts/yoster/yoster_0.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/leftdress.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/rightdress.png");
@@ -57,7 +125,7 @@ ApplicationMain.init = function() {
 	if(total == 0) ApplicationMain.start();
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "2", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
+	ApplicationMain.config = { build : "16", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
@@ -1566,6 +1634,60 @@ var DefaultAssetLibrary = function() {
 	lime_AssetLibrary.call(this);
 	openfl_text_Font.registerFont(_$_$ASSET_$_$OPENFL_$_$data_$fonts_$opensans_$opensans_$ttf);
 	var id;
+	id = "data/fonts/04b11/04b11.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/04b11/04b11_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/c64/c64.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/c64/c64_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/comic/comic.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/comic/comic_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/crypt/crypt.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/crypt/crypt_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/default/default.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/default/default_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/dos/dos.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/dos/dos_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/ganon/ganon.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/ganon/ganon_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/nokia/nokia.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/nokia/nokia_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/oldenglish/oldenglish.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/oldenglish/oldenglish_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/fonts/opensans/opensans.eot";
 	this.path.set(id,id);
 	this.type.set(id,"BINARY");
@@ -1578,6 +1700,54 @@ var DefaultAssetLibrary = function() {
 	id = "data/fonts/opensans/opensans.woff2";
 	this.path.set(id,id);
 	this.type.set(id,"BINARY");
+	id = "data/fonts/pixel/pixel.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/pixel/pixel_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/pressstart/pressstart.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/pressstart/pressstart_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/retrofuture/retrofuture.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/retrofuture/retrofuture_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/roman/roman.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/roman/roman_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/special/special.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/special/special_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/thin/thin.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/thin/thin_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/tiny/tiny.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/tiny/tiny_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/fonts/yoster/yoster.fnt";
+	this.path.set(id,id);
+	this.type.set(id,"TEXT");
+	id = "data/fonts/yoster/yoster_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/leftdress.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
@@ -1942,110 +2112,15 @@ _$List_ListIterator.prototype = {
 	,__class__: _$List_ListIterator
 };
 var Main = function() {
-	haxegon_Gfx.loadimage("leftdress");
-	haxegon_Gfx.loadimage("rightdress");
-	this.leftdresseffect = 1;
-	this.rightdresseffect = 1;
-	this.totaleffects = 5;
-	this.leftdressx = haxegon_Gfx.screenwidthmid / 2 - haxegon_Gfx.imagewidth("leftdress") / 2;
-	this.leftdressy = haxegon_Gfx.screenheightmid - haxegon_Gfx.imageheight("leftdress") / 2;
-	this.rightdressx = haxegon_Gfx.screenwidthmid + haxegon_Gfx.screenwidthmid / 2 - haxegon_Gfx.imagewidth("rightdress") / 2;
-	this.rightdressy = haxegon_Gfx.screenheightmid - haxegon_Gfx.imageheight("rightdress") / 2;
-	this.pulse = 0;
-	this.pulsedir = "up";
+	haxegon_Text.setfont("crypt");
+	haxegon_Gfx.resizescreen(768,300);
 };
 $hxClasses["Main"] = Main;
 Main.__name__ = ["Main"];
 Main.prototype = {
 	update: function() {
-		if(haxegon_Mouse.leftclick()) {
-			if(haxegon_Mouse.x < haxegon_Gfx.screenwidthmid) {
-				this.leftdresseffect = this.leftdresseffect + 1;
-				if(this.leftdresseffect > this.totaleffects) this.leftdresseffect = 1;
-			} else {
-				this.rightdresseffect = this.rightdresseffect + 1;
-				if(this.rightdresseffect > this.totaleffects) this.rightdresseffect = 1;
-			}
-		}
-		if(this.pulsedir == "up") {
-			this.pulse++;
-			if(this.pulse >= 20) this.pulsedir = "down";
-		} else if(this.pulsedir == "down") {
-			this.pulse--;
-			if(this.pulse <= 0) this.pulsedir = "up";
-		}
-		haxegon_Gfx.fillbox(0,0,haxegon_Gfx.screenwidthmid,haxegon_Gfx.screenheight,haxegon_Gfx.rgb(32,64,64));
-		haxegon_Gfx.fillbox(haxegon_Gfx.screenwidthmid,0,haxegon_Gfx.screenwidthmid,haxegon_Gfx.screenheight,haxegon_Gfx.rgb(64,32,64));
-		haxegon_Text.changesize(24);
-		haxegon_Gfx.rotation(0);
-		haxegon_Gfx.imagealpha(1.0);
-		haxegon_Gfx.imagecolor();
-		if(this.leftdresseffect == 1) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid / 2,40,"[SCALE x3]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.drawimage(this.leftdressx,this.leftdressy,"leftdress");
-		} else if(this.leftdresseffect == 2) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid / 2,40,"[SCALE x3, WITH ROTATION]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.rotation((this.pulse - 10) * 4);
-			haxegon_Gfx.drawimage(this.leftdressx,this.leftdressy,"leftdress");
-		} else if(this.leftdresseffect == 3) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid / 2,40,"[DIFFERENT X AND Y SCALES]");
-			haxegon_Gfx.scale(2 + this.pulse / 10,4 - this.pulse / 10);
-			haxegon_Gfx.drawimage(this.leftdressx,this.leftdressy,"leftdress");
-		} else if(this.leftdresseffect == 4) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid / 2,40,"[ALPHA TRANSPARANCY]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.rotation(0);
-			haxegon_Gfx.imagealpha(1.0 - this.pulse / 20);
-			haxegon_Gfx.drawimage(this.leftdressx,this.leftdressy,"leftdress");
-		} else if(this.leftdresseffect == 5) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid / 2,40,"[CHANGING GREEN MULTIPLER]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.imagecolor(haxegon_Gfx.rgb(255,haxegon_Convert.toint(this.pulse * 255 / 20),255));
-			haxegon_Gfx.drawimage(this.leftdressx,this.leftdressy,"leftdress");
-		}
-		haxegon_Gfx.rotation(0);
-		haxegon_Gfx.imagealpha(1.0);
-		haxegon_Gfx.imagecolor();
-		if(this.rightdresseffect == 1) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid + haxegon_Gfx.screenwidthmid / 2,40,"[SCALE x3]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.drawimage(this.rightdressx,this.rightdressy,"rightdress");
-		} else if(this.rightdresseffect == 2) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid + haxegon_Gfx.screenwidthmid / 2,40,"[SCALE x3, WITH ROTATION]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.rotation((this.pulse - 10) * 4);
-			haxegon_Gfx.drawimage(this.rightdressx,this.rightdressy,"rightdress");
-		} else if(this.rightdresseffect == 3) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid + haxegon_Gfx.screenwidthmid / 2,40,"[DIFFERENT X AND Y SCALES]");
-			haxegon_Gfx.scale(2 + this.pulse / 10,4 - this.pulse / 10);
-			haxegon_Gfx.drawimage(this.rightdressx,this.rightdressy,"rightdress");
-		} else if(this.rightdresseffect == 4) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid + haxegon_Gfx.screenwidthmid / 2,40,"[ALPHA TRANSPARANCY]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.imagealpha(1.0 - this.pulse / 20);
-			haxegon_Gfx.drawimage(this.rightdressx,this.rightdressy,"rightdress");
-		} else if(this.rightdresseffect == 5) {
-			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid + haxegon_Gfx.screenwidthmid / 2,40,"[CHANGING BLUE MULTIPLER]");
-			haxegon_Gfx.scale(3,3);
-			haxegon_Gfx.imagecolor(haxegon_Gfx.rgb(255,255,haxegon_Convert.toint(this.pulse * 255 / 20)));
-			haxegon_Gfx.drawimage(this.rightdressx,this.rightdressy,"rightdress");
-		}
-		haxegon_Gfx.fillbox(0,haxegon_Gfx.screenheight - 30,haxegon_Gfx.screenwidth,30,haxegon_Gfx.rgb(64,64,64));
-		haxegon_Text.changesize(16);
-		haxegon_Text.display(haxegon_Gfx.CENTER,haxegon_Gfx.screenheight - haxegon_Text.height() - 5,"CLICK ON A DRESS TO CHANGE EFFECTS",haxegon_Col.WHITE);
+		haxegon_Text.display(5,5,"INPUT\n\nBACK\nFORWARD\nTOP\nBOTTOM\nPUSH\nPOP\nREMOVE\nEND\nIF\nWHILE\nEXEC\nREMOVE\nEND\nIF\nWHILE\nEXEC\nBACK\nFORWARD\nBACK\nFORWARD\nTOP\nBOTTOM\nPUSH\nPOP\nREMOVE\nEND\nIF\nWHILE\nEXEC\nREMOVE\nEND\nIF\nEXE",haxegon_Col.WHITE);
+		haxegon_Gfx.drawline(10,10,50,50,haxegon_Col.WHITE);
 	}
 	,__class__: Main
 };

@@ -30,6 +30,78 @@ class ApplicationMain {
 		var types = [];
 		
 		
+		urls.push ("data/fonts/04b11/04b11.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/04b11/04b11_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/c64/c64.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/c64/c64_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/comic/comic.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/comic/comic_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/crypt/crypt.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/crypt/crypt_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/default/default.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/default/default_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/dos/dos.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/dos/dos_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/ganon/ganon.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/ganon/ganon_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/nokia/nokia.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/nokia/nokia_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/oldenglish/oldenglish.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/oldenglish/oldenglish_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/fonts/opensans/opensans.eot");
 		types.push (lime.Assets.AssetType.BINARY);
 		
@@ -44,6 +116,70 @@ class ApplicationMain {
 		
 		urls.push ("data/fonts/opensans/opensans.woff2");
 		types.push (lime.Assets.AssetType.BINARY);
+		
+		
+		urls.push ("data/fonts/pixel/pixel.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/pixel/pixel_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/pressstart/pressstart.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/pressstart/pressstart_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/retrofuture/retrofuture.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/retrofuture/retrofuture_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/roman/roman.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/roman/roman_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/special/special.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/special/special_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/thin/thin.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/thin/thin_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/tiny/tiny.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/tiny/tiny_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/fonts/yoster/yoster.fnt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("data/fonts/yoster/yoster_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
 		urls.push ("data/graphics/leftdress.png");
@@ -115,7 +251,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "2",
+			build: "16",
 			company: "Your name here",
 			file: "drawingimages",
 			fps: 60,

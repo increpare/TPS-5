@@ -100,7 +100,7 @@
 <char id="91" x="251" y="40" width="8" height="16" xoffset="0" yoffset="-2" xadvance="9" page="0" chnl="15" />
 <char id="92" x="260" y="40" width="8" height="16" xoffset="0" yoffset="-2" xadvance="9" page="0" chnl="15" />
 <char id="93" x="269" y="40" width="8" height="16" xoffset="0" yoffset="-2" xadvance="9" page="0" chnl="15" />
-<char id="94" x="278" y="40" width="8" height="16" xoffset="0" yoffset="-2" xadvance="9" page="0" chnl="15" />
+<char id="94" x="278" y="40" width="8" height="16" xoffset="0" yoffset="0" xadvance="9" page="0" chnl="15" />
 <char id="95" x="287" y="40" width="8" height="16" xoffset="0" yoffset="-2" xadvance="9" page="0" chnl="15" />
 <char id="96" x="8" y="56" width="8" height="16" xoffset="0" yoffset="-2" xadvance="9" page="0" chnl="15" />
 <char id="97" x="17" y="56" width="8" height="16" xoffset="0" yoffset="-2" xadvance="9" page="0" chnl="15" />

@@ -14,7 +14,7 @@
    />
    
 	<window
-      width="768" height="480" unless="mobile" 
+      width="900" height="600" unless="mobile" 
    ></window>
    
 	<window

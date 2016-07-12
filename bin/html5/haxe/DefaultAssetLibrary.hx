@@ -52,7 +52,41 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (openfl && !flash)
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__data_fonts_opensans_opensans_ttf);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -62,6 +96,42 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		#if flash
 		
+		className.set ("data/fonts/04b11/04b11.fnt", __ASSET__data_fonts_04b11_04b11_fnt);
+		type.set ("data/fonts/04b11/04b11.fnt", AssetType.TEXT);
+		className.set ("data/fonts/04b11/04b11_0.png", __ASSET__data_fonts_04b11_04b11_0_png);
+		type.set ("data/fonts/04b11/04b11_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/c64/c64.fnt", __ASSET__data_fonts_c64_c64_fnt);
+		type.set ("data/fonts/c64/c64.fnt", AssetType.TEXT);
+		className.set ("data/fonts/c64/c64_0.png", __ASSET__data_fonts_c64_c64_0_png);
+		type.set ("data/fonts/c64/c64_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/comic/comic.fnt", __ASSET__data_fonts_comic_comic_fnt);
+		type.set ("data/fonts/comic/comic.fnt", AssetType.TEXT);
+		className.set ("data/fonts/comic/comic_0.png", __ASSET__data_fonts_comic_comic_0_png);
+		type.set ("data/fonts/comic/comic_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/crypt/crypt.fnt", __ASSET__data_fonts_crypt_crypt_fnt);
+		type.set ("data/fonts/crypt/crypt.fnt", AssetType.TEXT);
+		className.set ("data/fonts/crypt/crypt_0.png", __ASSET__data_fonts_crypt_crypt_0_png);
+		type.set ("data/fonts/crypt/crypt_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/default/default.fnt", __ASSET__data_fonts_default_default_fnt);
+		type.set ("data/fonts/default/default.fnt", AssetType.TEXT);
+		className.set ("data/fonts/default/default_0.png", __ASSET__data_fonts_default_default_0_png);
+		type.set ("data/fonts/default/default_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/dos/dos.fnt", __ASSET__data_fonts_dos_dos_fnt);
+		type.set ("data/fonts/dos/dos.fnt", AssetType.TEXT);
+		className.set ("data/fonts/dos/dos_0.png", __ASSET__data_fonts_dos_dos_0_png);
+		type.set ("data/fonts/dos/dos_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/ganon/ganon.fnt", __ASSET__data_fonts_ganon_ganon_fnt);
+		type.set ("data/fonts/ganon/ganon.fnt", AssetType.TEXT);
+		className.set ("data/fonts/ganon/ganon_0.png", __ASSET__data_fonts_ganon_ganon_0_png);
+		type.set ("data/fonts/ganon/ganon_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/nokia/nokia.fnt", __ASSET__data_fonts_nokia_nokia_fnt);
+		type.set ("data/fonts/nokia/nokia.fnt", AssetType.TEXT);
+		className.set ("data/fonts/nokia/nokia_0.png", __ASSET__data_fonts_nokia_nokia_0_png);
+		type.set ("data/fonts/nokia/nokia_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/oldenglish/oldenglish.fnt", __ASSET__data_fonts_oldenglish_oldenglish_fnt);
+		type.set ("data/fonts/oldenglish/oldenglish.fnt", AssetType.TEXT);
+		className.set ("data/fonts/oldenglish/oldenglish_0.png", __ASSET__data_fonts_oldenglish_oldenglish_0_png);
+		type.set ("data/fonts/oldenglish/oldenglish_0.png", AssetType.IMAGE);
 		className.set ("data/fonts/opensans/opensans.eot", __ASSET__data_fonts_opensans_opensans_eot);
 		type.set ("data/fonts/opensans/opensans.eot", AssetType.BINARY);
 		className.set ("data/fonts/opensans/opensans.ttf", __ASSET__data_fonts_opensans_opensans_ttf);
@@ -70,6 +140,38 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("data/fonts/opensans/opensans.woff", AssetType.BINARY);
 		className.set ("data/fonts/opensans/opensans.woff2", __ASSET__data_fonts_opensans_opensans_woff2);
 		type.set ("data/fonts/opensans/opensans.woff2", AssetType.BINARY);
+		className.set ("data/fonts/pixel/pixel.fnt", __ASSET__data_fonts_pixel_pixel_fnt);
+		type.set ("data/fonts/pixel/pixel.fnt", AssetType.TEXT);
+		className.set ("data/fonts/pixel/pixel_0.png", __ASSET__data_fonts_pixel_pixel_0_png);
+		type.set ("data/fonts/pixel/pixel_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/pressstart/pressstart.fnt", __ASSET__data_fonts_pressstart_pressstart_fnt);
+		type.set ("data/fonts/pressstart/pressstart.fnt", AssetType.TEXT);
+		className.set ("data/fonts/pressstart/pressstart_0.png", __ASSET__data_fonts_pressstart_pressstart_0_png);
+		type.set ("data/fonts/pressstart/pressstart_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/retrofuture/retrofuture.fnt", __ASSET__data_fonts_retrofuture_retrofuture_fnt);
+		type.set ("data/fonts/retrofuture/retrofuture.fnt", AssetType.TEXT);
+		className.set ("data/fonts/retrofuture/retrofuture_0.png", __ASSET__data_fonts_retrofuture_retrofuture_0_png);
+		type.set ("data/fonts/retrofuture/retrofuture_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/roman/roman.fnt", __ASSET__data_fonts_roman_roman_fnt);
+		type.set ("data/fonts/roman/roman.fnt", AssetType.TEXT);
+		className.set ("data/fonts/roman/roman_0.png", __ASSET__data_fonts_roman_roman_0_png);
+		type.set ("data/fonts/roman/roman_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/special/special.fnt", __ASSET__data_fonts_special_special_fnt);
+		type.set ("data/fonts/special/special.fnt", AssetType.TEXT);
+		className.set ("data/fonts/special/special_0.png", __ASSET__data_fonts_special_special_0_png);
+		type.set ("data/fonts/special/special_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/thin/thin.fnt", __ASSET__data_fonts_thin_thin_fnt);
+		type.set ("data/fonts/thin/thin.fnt", AssetType.TEXT);
+		className.set ("data/fonts/thin/thin_0.png", __ASSET__data_fonts_thin_thin_0_png);
+		type.set ("data/fonts/thin/thin_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/tiny/tiny.fnt", __ASSET__data_fonts_tiny_tiny_fnt);
+		type.set ("data/fonts/tiny/tiny.fnt", AssetType.TEXT);
+		className.set ("data/fonts/tiny/tiny_0.png", __ASSET__data_fonts_tiny_tiny_0_png);
+		type.set ("data/fonts/tiny/tiny_0.png", AssetType.IMAGE);
+		className.set ("data/fonts/yoster/yoster.fnt", __ASSET__data_fonts_yoster_yoster_fnt);
+		type.set ("data/fonts/yoster/yoster.fnt", AssetType.TEXT);
+		className.set ("data/fonts/yoster/yoster_0.png", __ASSET__data_fonts_yoster_yoster_0_png);
+		type.set ("data/fonts/yoster/yoster_0.png", AssetType.IMAGE);
 		className.set ("data/graphics/leftdress.png", __ASSET__data_graphics_leftdress_png);
 		type.set ("data/graphics/leftdress.png", AssetType.IMAGE);
 		className.set ("data/graphics/rightdress.png", __ASSET__data_graphics_rightdress_png);
@@ -79,6 +181,78 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#elseif html5
 		
 		var id;
+		id = "data/fonts/04b11/04b11.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/04b11/04b11_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/c64/c64.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/c64/c64_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/comic/comic.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/comic/comic_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/crypt/crypt.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/crypt/crypt_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/default/default.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/default/default_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/dos/dos.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/dos/dos_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/ganon/ganon.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/ganon/ganon_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/nokia/nokia.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/nokia/nokia_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/oldenglish/oldenglish.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/oldenglish/oldenglish_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/fonts/opensans/opensans.eot";
 		path.set (id, id);
 		
@@ -95,6 +269,70 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.BINARY);
+		id = "data/fonts/pixel/pixel.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/pixel/pixel_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/pressstart/pressstart.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/pressstart/pressstart_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/retrofuture/retrofuture.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/retrofuture/retrofuture_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/roman/roman.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/roman/roman_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/special/special.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/special/special_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/thin/thin.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/thin/thin_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/tiny/tiny.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/tiny/tiny_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/fonts/yoster/yoster.fnt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "data/fonts/yoster/yoster_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/leftdress.png";
 		path.set (id, id);
 		
@@ -121,6 +359,60 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		var useManifest = false;
 		
+		className.set ("data/fonts/04b11/04b11.fnt", __ASSET__data_fonts_04b11_04b11_fnt);
+		type.set ("data/fonts/04b11/04b11.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/04b11/04b11_0.png", __ASSET__data_fonts_04b11_04b11_0_png);
+		type.set ("data/fonts/04b11/04b11_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/c64/c64.fnt", __ASSET__data_fonts_c64_c64_fnt);
+		type.set ("data/fonts/c64/c64.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/c64/c64_0.png", __ASSET__data_fonts_c64_c64_0_png);
+		type.set ("data/fonts/c64/c64_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/comic/comic.fnt", __ASSET__data_fonts_comic_comic_fnt);
+		type.set ("data/fonts/comic/comic.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/comic/comic_0.png", __ASSET__data_fonts_comic_comic_0_png);
+		type.set ("data/fonts/comic/comic_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/crypt/crypt.fnt", __ASSET__data_fonts_crypt_crypt_fnt);
+		type.set ("data/fonts/crypt/crypt.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/crypt/crypt_0.png", __ASSET__data_fonts_crypt_crypt_0_png);
+		type.set ("data/fonts/crypt/crypt_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/default/default.fnt", __ASSET__data_fonts_default_default_fnt);
+		type.set ("data/fonts/default/default.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/default/default_0.png", __ASSET__data_fonts_default_default_0_png);
+		type.set ("data/fonts/default/default_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/dos/dos.fnt", __ASSET__data_fonts_dos_dos_fnt);
+		type.set ("data/fonts/dos/dos.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/dos/dos_0.png", __ASSET__data_fonts_dos_dos_0_png);
+		type.set ("data/fonts/dos/dos_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/ganon/ganon.fnt", __ASSET__data_fonts_ganon_ganon_fnt);
+		type.set ("data/fonts/ganon/ganon.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/ganon/ganon_0.png", __ASSET__data_fonts_ganon_ganon_0_png);
+		type.set ("data/fonts/ganon/ganon_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/nokia/nokia.fnt", __ASSET__data_fonts_nokia_nokia_fnt);
+		type.set ("data/fonts/nokia/nokia.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/nokia/nokia_0.png", __ASSET__data_fonts_nokia_nokia_0_png);
+		type.set ("data/fonts/nokia/nokia_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/oldenglish/oldenglish.fnt", __ASSET__data_fonts_oldenglish_oldenglish_fnt);
+		type.set ("data/fonts/oldenglish/oldenglish.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/oldenglish/oldenglish_0.png", __ASSET__data_fonts_oldenglish_oldenglish_0_png);
+		type.set ("data/fonts/oldenglish/oldenglish_0.png", AssetType.IMAGE);
+		
 		className.set ("data/fonts/opensans/opensans.eot", __ASSET__data_fonts_opensans_opensans_eot);
 		type.set ("data/fonts/opensans/opensans.eot", AssetType.BINARY);
 		
@@ -132,6 +424,54 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("data/fonts/opensans/opensans.woff2", __ASSET__data_fonts_opensans_opensans_woff2);
 		type.set ("data/fonts/opensans/opensans.woff2", AssetType.BINARY);
+		
+		className.set ("data/fonts/pixel/pixel.fnt", __ASSET__data_fonts_pixel_pixel_fnt);
+		type.set ("data/fonts/pixel/pixel.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/pixel/pixel_0.png", __ASSET__data_fonts_pixel_pixel_0_png);
+		type.set ("data/fonts/pixel/pixel_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/pressstart/pressstart.fnt", __ASSET__data_fonts_pressstart_pressstart_fnt);
+		type.set ("data/fonts/pressstart/pressstart.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/pressstart/pressstart_0.png", __ASSET__data_fonts_pressstart_pressstart_0_png);
+		type.set ("data/fonts/pressstart/pressstart_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/retrofuture/retrofuture.fnt", __ASSET__data_fonts_retrofuture_retrofuture_fnt);
+		type.set ("data/fonts/retrofuture/retrofuture.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/retrofuture/retrofuture_0.png", __ASSET__data_fonts_retrofuture_retrofuture_0_png);
+		type.set ("data/fonts/retrofuture/retrofuture_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/roman/roman.fnt", __ASSET__data_fonts_roman_roman_fnt);
+		type.set ("data/fonts/roman/roman.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/roman/roman_0.png", __ASSET__data_fonts_roman_roman_0_png);
+		type.set ("data/fonts/roman/roman_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/special/special.fnt", __ASSET__data_fonts_special_special_fnt);
+		type.set ("data/fonts/special/special.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/special/special_0.png", __ASSET__data_fonts_special_special_0_png);
+		type.set ("data/fonts/special/special_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/thin/thin.fnt", __ASSET__data_fonts_thin_thin_fnt);
+		type.set ("data/fonts/thin/thin.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/thin/thin_0.png", __ASSET__data_fonts_thin_thin_0_png);
+		type.set ("data/fonts/thin/thin_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/tiny/tiny.fnt", __ASSET__data_fonts_tiny_tiny_fnt);
+		type.set ("data/fonts/tiny/tiny.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/tiny/tiny_0.png", __ASSET__data_fonts_tiny_tiny_0_png);
+		type.set ("data/fonts/tiny/tiny_0.png", AssetType.IMAGE);
+		
+		className.set ("data/fonts/yoster/yoster.fnt", __ASSET__data_fonts_yoster_yoster_fnt);
+		type.set ("data/fonts/yoster/yoster.fnt", AssetType.TEXT);
+		
+		className.set ("data/fonts/yoster/yoster_0.png", __ASSET__data_fonts_yoster_yoster_0_png);
+		type.set ("data/fonts/yoster/yoster_0.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/leftdress.png", __ASSET__data_graphics_leftdress_png);
 		type.set ("data/graphics/leftdress.png", AssetType.IMAGE);
@@ -783,10 +1123,44 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if !display
 #if flash
 
+@:keep @:bind #if display private #end class __ASSET__data_fonts_04b11_04b11_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_04b11_04b11_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_c64_c64_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_c64_c64_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_comic_comic_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_comic_comic_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_crypt_crypt_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_crypt_crypt_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_default_default_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_default_default_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_dos_dos_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_dos_dos_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_ganon_ganon_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_ganon_ganon_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_nokia_nokia_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_nokia_nokia_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_oldenglish_oldenglish_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_oldenglish_oldenglish_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_eot extends null { }
 @:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends null { }
 @:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_woff extends null { }
 @:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_woff2 extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_pixel_pixel_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_pixel_pixel_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_pressstart_pressstart_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_pressstart_pressstart_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_retrofuture_retrofuture_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_retrofuture_retrofuture_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_roman_roman_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_roman_roman_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_special_special_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_special_special_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_thin_thin_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_thin_thin_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_tiny_tiny_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_tiny_tiny_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_yoster_yoster_fnt extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_yoster_yoster_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_leftdress_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_rightdress_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 
@@ -794,7 +1168,41 @@ class DefaultAssetLibrary extends AssetLibrary {
 #elseif html5
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @:keep #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends lime.text.Font { public function new () { super (); name = "Open Sans"; } } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -808,10 +1216,44 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if (windows || mac || linux || cpp)
 
 
+@:file("data/fonts/04b11/04b11.fnt") #if display private #end class __ASSET__data_fonts_04b11_04b11_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/04b11/04b11_0.png") #if display private #end class __ASSET__data_fonts_04b11_04b11_0_png extends lime.graphics.Image {}
+@:file("data/fonts/c64/c64.fnt") #if display private #end class __ASSET__data_fonts_c64_c64_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/c64/c64_0.png") #if display private #end class __ASSET__data_fonts_c64_c64_0_png extends lime.graphics.Image {}
+@:file("data/fonts/comic/comic.fnt") #if display private #end class __ASSET__data_fonts_comic_comic_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/comic/comic_0.png") #if display private #end class __ASSET__data_fonts_comic_comic_0_png extends lime.graphics.Image {}
+@:file("data/fonts/crypt/crypt.fnt") #if display private #end class __ASSET__data_fonts_crypt_crypt_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/crypt/crypt_0.png") #if display private #end class __ASSET__data_fonts_crypt_crypt_0_png extends lime.graphics.Image {}
+@:file("data/fonts/default/default.fnt") #if display private #end class __ASSET__data_fonts_default_default_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/default/default_0.png") #if display private #end class __ASSET__data_fonts_default_default_0_png extends lime.graphics.Image {}
+@:file("data/fonts/dos/dos.fnt") #if display private #end class __ASSET__data_fonts_dos_dos_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/dos/dos_0.png") #if display private #end class __ASSET__data_fonts_dos_dos_0_png extends lime.graphics.Image {}
+@:file("data/fonts/ganon/ganon.fnt") #if display private #end class __ASSET__data_fonts_ganon_ganon_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/ganon/ganon_0.png") #if display private #end class __ASSET__data_fonts_ganon_ganon_0_png extends lime.graphics.Image {}
+@:file("data/fonts/nokia/nokia.fnt") #if display private #end class __ASSET__data_fonts_nokia_nokia_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/nokia/nokia_0.png") #if display private #end class __ASSET__data_fonts_nokia_nokia_0_png extends lime.graphics.Image {}
+@:file("data/fonts/oldenglish/oldenglish.fnt") #if display private #end class __ASSET__data_fonts_oldenglish_oldenglish_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/oldenglish/oldenglish_0.png") #if display private #end class __ASSET__data_fonts_oldenglish_oldenglish_0_png extends lime.graphics.Image {}
 @:file("data/fonts/opensans/opensans.eot") #if display private #end class __ASSET__data_fonts_opensans_opensans_eot extends lime.utils.Bytes {}
 @:font("data/fonts/opensans/opensans.ttf") #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends lime.text.Font {}
 @:file("data/fonts/opensans/opensans.woff") #if display private #end class __ASSET__data_fonts_opensans_opensans_woff extends lime.utils.Bytes {}
 @:file("data/fonts/opensans/opensans.woff2") #if display private #end class __ASSET__data_fonts_opensans_opensans_woff2 extends lime.utils.Bytes {}
+@:file("data/fonts/pixel/pixel.fnt") #if display private #end class __ASSET__data_fonts_pixel_pixel_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/pixel/pixel_0.png") #if display private #end class __ASSET__data_fonts_pixel_pixel_0_png extends lime.graphics.Image {}
+@:file("data/fonts/pressstart/pressstart.fnt") #if display private #end class __ASSET__data_fonts_pressstart_pressstart_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/pressstart/pressstart_0.png") #if display private #end class __ASSET__data_fonts_pressstart_pressstart_0_png extends lime.graphics.Image {}
+@:file("data/fonts/retrofuture/retrofuture.fnt") #if display private #end class __ASSET__data_fonts_retrofuture_retrofuture_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/retrofuture/retrofuture_0.png") #if display private #end class __ASSET__data_fonts_retrofuture_retrofuture_0_png extends lime.graphics.Image {}
+@:file("data/fonts/roman/roman.fnt") #if display private #end class __ASSET__data_fonts_roman_roman_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/roman/roman_0.png") #if display private #end class __ASSET__data_fonts_roman_roman_0_png extends lime.graphics.Image {}
+@:file("data/fonts/special/special.fnt") #if display private #end class __ASSET__data_fonts_special_special_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/special/special_0.png") #if display private #end class __ASSET__data_fonts_special_special_0_png extends lime.graphics.Image {}
+@:file("data/fonts/thin/thin.fnt") #if display private #end class __ASSET__data_fonts_thin_thin_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/thin/thin_0.png") #if display private #end class __ASSET__data_fonts_thin_thin_0_png extends lime.graphics.Image {}
+@:file("data/fonts/tiny/tiny.fnt") #if display private #end class __ASSET__data_fonts_tiny_tiny_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/tiny/tiny_0.png") #if display private #end class __ASSET__data_fonts_tiny_tiny_0_png extends lime.graphics.Image {}
+@:file("data/fonts/yoster/yoster.fnt") #if display private #end class __ASSET__data_fonts_yoster_yoster_fnt extends lime.utils.Bytes {}
+@:image("data/fonts/yoster/yoster_0.png") #if display private #end class __ASSET__data_fonts_yoster_yoster_0_png extends lime.graphics.Image {}
 @:image("data/graphics/leftdress.png") #if display private #end class __ASSET__data_graphics_leftdress_png extends lime.graphics.Image {}
 @:image("data/graphics/rightdress.png") #if display private #end class __ASSET__data_graphics_rightdress_png extends lime.graphics.Image {}
 

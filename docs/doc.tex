@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{scrextend}
+\title{Token Processing System Manual}
+\author{Stephen Lavelle}
+\date{July 2016}
+\begin{document}
+   \maketitle
+
+\section{Architecture}
+
+The \emph{TPS-5} is a versatile system for manipulating tokens.   It can store in total 224 tokens, divided into seven buffers of 32 tokens each.  
+
+There are seven buffers - one (\emph{DATA}) is for public input/output, to be read by external software, the remaining six are private buffers for your programs.  Three (\emph{TPS\#1},\emph{TPS\#2},\emph{TPS\#3}) are where you will write your code, and the other three (\emph{STACK\#1},\emph{STACK\#2},\emph{STACK\#3}) are stacks for temporary storage.  All six of the interal buffers have individual TPS microcontrollers.
+
+A TPS microcontroller has access to three buffers - data, script, and stack.  At any one time only one TPS microcontroller can be active - a TPS microcontroller can give control to the TPS that runs on its data buffer (if there is one - DATA is not interpreted by any microcontroller), or it can relinquish control back its parent controller.
+
+
+\section{Instructions}
+
+\begin{labeling}{RESTORE}
+
+
+\item [BOTTOM] 
+Moves the child cursor to the last place.
+
+\item [END]
+Halts termination of program.
+
+\item [EXEC]
+Looks at the current child token, and executes it (without changing context).
+
+\item [IF]
+The two tokens following \emph{IF} are called the \emph{antecedent} and the \emph{consequent} respectively.  If the currently selected child token is the same as the \emph{antecedent}, then control goes to the consequent, otherwise control goes to the token one past the consequent.
+
+\item [IN]
+Transfers control to a child TPS, if one exists.
+
+\item [OUT]
+Transfers control to a parent TPS, if one exists.
+
+\item [PREV] 
+Moves the child cursor back one, if possible.
+
+\item [NEXT] 
+Moves the child cursor forward one, if possible.
+
+\item [POP] 
+Sets the currently highlighted child token to be the currently highlighted stack token.
+
+\item [PUSH] 
+Adds a copy of the current item to the stack at the position of the stack cursor.
+
+\item [REMOVE]
+Deletes the token currently pointed to in the child data.
+
+\item [RESTORE]
+Restore the child cursor's position to that specified by \emph{SAVE}.
+
+\item [SAVE]
+Remember the position of the current child cursor.
+
+\item [SWITCH]
+Switches the buffer and the stack.
+
+\item [TOP] 
+Moves the child cursor to the first place.
+
+\item [WHILE]
+As for \emph{IF}, keeps executing the consequent so long as the antecedent is the same as the currently highlighted child token. If this is no longer true, control moves to the token after the consequent.
+
+
+\item
+All other tokens result in the interpreter doing nothing.
+
+\end{labeling}
+
+
+\end{document}
