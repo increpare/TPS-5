@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>TPS-5 Manual</title>
+</head>
+<body>
+	<h1>TPS-5 Manual</h1>
+	<p>
+
+	<b>Stephen Lavelle</b><br>
+	<b><a href="mailto:analytic@gmail.com">analytic@gmail.com</a></b><br>
+	12 July 2016
+
+	<p>
+	<h2>Table of Contents</h2>
+	<ol>
+	<li><a href="#Introduction">Introduction</li>
+	<li><a href="#Architecture">Architecture</li>
+	<li><a href="#Operations">Operations</li>
+	<li><a href="#Examples">Examples</li>
+	</ol>
+<p>
+<a name="Introduction"></a>
+<h2>Introduction</h2>
+<p>
+<b>TPS-5</b> is a versatile system for manipulating tokens.   It can store in total 224 tokens, divided into seven buffers of 32 tokens each.  
+<p>
+<a name="Architecture"></a>
+<h2>Architecture</h2>
+<p>
+There are seven buffers, and three microcessors capable of running instructions on them.  The processors do not operate in parallel, but drive + control each other (from right to left), and can modify eachother's memory.
+<p>
+<a name="Instructions"></a>
+<h2>Instructions</h2>
+<p>
+<dl>
+<dt>BOTTOM<dd>Moves child cursor to the last entry of the data buffer.
+<dt>END<dd>Finishes termination of the program.
+<dt>EXEC<dd>Executes the current child token, but in this context, not the child's context.
+<dt>IF<dd>If the token following this is equal to the current child token, skip ahead two places in the current context, otherwise skip ahead 3 places.
+<dt>IFN<dd>If the token following this is <em>not</em> equal to the current child token, skip ahead two places in the current context, otherwise skip ahead 3 places.
+<dt>OUT<dd>Switch to the parent context.
+<dt>NEXT<dd>Move the child cursor forward.
+<dt>POP<dd>Insert the child token in the stack at the stack cursor position.
+<dt>PREV<dd>Move the child cursor back one.
+<dt>PUSH<dd>Insert the currently selected stack token at the child cursor position.
+<dt>REMOVE<dd>Removes the token in the child position.
+<dt>RESTORE<dd>Move the child cursor to the saved position (set with <em>SAVE</em>).
+<dt>SAVE<dd>Remembers the child's current position.  Go back to the position previously set by <em>SAVE</em>.
+<dt>SWITCH<dd>Swap the data buffer and the stack buffer, including cursor positions and remembered cursor positions.
+<dt>TICK<dd>For one operation, go to the child parent context and execute the instruction there (if it is also a tick then it will execute that tick also).
+<dt>TOP<dd>Moves child cursor to the first entry of the data buffer.
+</dl>
+<p>
+<a name="Examples"></a>
+<h2>Examples</h2>
+<p>
+You can load these by copying them, then pressing <b>L</b> in the IDE + pasting in the text.
+<ul>
+<li><a href="http://ded.increpare.com/~locus/tps5/data/text/example1.txt">http://ded.increpare.com/~locus/tps5/data/text/example1.txt</a> - reverse fixed-length string
+<li><a href="http://ded.increpare.com/~locus/tps5/data/text/example2.txt">http://ded.increpare.com/~locus/tps5/data/text/example2.txt</a> - remove 'FUCK' tokens
+<li><a href="http://ded.increpare.com/~locus/tps5/data/text/example3.txt">http://ded.increpare.com/~locus/tps5/data/text/example3.txt</a> - insert A after every C
+<li><a href="http://ded.increpare.com/~locus/tps5/data/text/example4.txt">http://ded.increpare.com/~locus/tps5/data/text/example4.txt</a> - move all CAT tokens to end of string (not solved)
+<li><a href="http://ded.increpare.com/~locus/tps5/data/text/example5.txt">http://ded.increpare.com/~locus/tps5/data/text/example5.txt</a> - duplicate every token
+<li><a href="http://ded.increpare.com/~locus/tps5/data/text/example6.txt">http://ded.increpare.com/~locus/tps5/data/text/example6.txt</a> - reverse END-terminated string
+<li><a href="http://ded.increpare.com/~locus/tps5/data/text/example7.txt">http://ded.increpare.com/~locus/tps5/data/text/example7.txt</a> - fixing bug by real-time patching
+</ul>
+</body>
+</html>

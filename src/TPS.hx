@@ -10,7 +10,6 @@ class TPS {
     public var childTarget:Int;
 
     public var target : Int = 0;
-    public var state : State;
     
     public var contextLock:Bool = false;
 
@@ -33,7 +32,6 @@ class TPS {
         data.pos = 0;
         script.pos = 0;
         stack.pos = 0;
-        state = State.Regular;
     }
 
 
@@ -88,7 +86,7 @@ class TPS {
     }
 
     public function Locked():Bool {
-        return contextLock || state != State.Regular;
+        return contextLock;
     }
 
     public function tick(){
@@ -98,56 +96,6 @@ class TPS {
             stack = t;
         }
 
-        if (state == State.While2){
-            state = State.While;
-        }
-
-        if (state == State.If)
-        {
-            state = State.Regular;
-            if (data.get(data.pos) != script.get(script.pos))
-            {
-                script.ProgressCursor();
-                script.ProgressCursor();
-                return;
-            } 
-        } else if (state == State.IfN)
-        {
-            state = State.Regular;
-            if (data.get(data.pos) == script.get(script.pos))
-            {
-                script.ProgressCursor();
-                script.ProgressCursor();
-                return;
-            } 
-        } else if (state == State.While)
-        {
-            if (data.get(data.pos) != script.get(script.pos))
-            {
-                state = State.Regular;
-                script.ProgressCursor();
-                script.ProgressCursor();
-                return;
-            }         
-            else {      
-                script.ProgressCursor();    
-                state = State.While2;      
-            }
-        }  else if (state == State.WhileN)
-        {
-            if (data.get(data.pos) == script.get(script.pos))
-            {
-                state = State.Regular;
-                script.ProgressCursor();
-                script.ProgressCursor();
-                return;
-            }         
-            else {      
-                script.ProgressCursor();    
-                state = State.While2N;      
-            }
-        } 
-         
         var t : String = script.get(script.pos);
         if (t == "EXEC")
         {
@@ -158,13 +106,9 @@ class TPS {
         switch (t)
         {
             case "PREV":
-                if (data.pos>0){
-                    data.RegressCursor();
-                }
+                data.RegressCursor();
             case "NEXT":
-                if (data.pos<data.length-1){
-                    data.ProgressCursor();
-                }
+                data.ProgressCursor();
             case "TOP":
                 data.pos=0;
             case "BOTTOM":
@@ -191,21 +135,17 @@ class TPS {
             case "END":
                 sim.curTarget=-1;
             case "IF":
-                if (data.get((data.pos+1)%data.length) != script.get((script.pos+1)%script.length))
+                script.ProgressCursor();
+                if (data.get((data.pos)%data.length) != script.get((script.pos)%script.length))
                 {
                     script.ProgressCursor();
                 } 
             case "IFN":
-                if (data.get((data.pos+1)%data.length) != script.get((script.pos+1)%script.length))
+                script.ProgressCursor();
+                if (data.get((data.pos)%data.length) == script.get((script.pos)%script.length))
                 {
                     script.ProgressCursor();
                 } 
-            case "WHILE":
-                state = State.While;
-                script.ProgressCursor();
-            case "WHILEN":
-                state = State.WhileN;
-                script.ProgressCursor();
             case "EXEC":
                 Error("tried to call exec recursively");
             case "TICK":
@@ -230,18 +170,11 @@ class TPS {
                     contextLock=false;
                     sim.curTarget++;
                     var targetTPS = sim.tps[sim.curTarget];
-                    targetTPS.script.ProgressCursor();
                 }
         }
 
-        if (state==State.While || state==State.WhileN){
-
-        } else if (state == State.While2 || state == State.While2N){
-            script.RegressCursor();
-        } else {
-            script.ProgressCursor();        
-        }
-
+        script.ProgressCursor();        
+        
         if (target==1){
             var t = data;
             data = stack;

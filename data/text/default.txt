@@ -1,6 +1,6 @@
 :DATA
-cat
-mammoth
+fuck
+fuck
 fuck
 mammoth
 cat
@@ -15,12 +15,14 @@ fuck
 end
 
 :TPS1
-while
+if
 fuck
 remove
 if
 end
 end
+ifn
+fuck 
 next
 
 :TPS2

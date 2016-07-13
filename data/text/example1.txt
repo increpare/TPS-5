@@ -23,6 +23,4 @@ in
 in
 
 :SPECIFICATIONS
-reverse the input
-
-no, really!
+Reverse the input

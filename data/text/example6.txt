@@ -1,0 +1,29 @@
+:DATA
+a
+b
+c
+d
+end
+
+:TPS1
+push
+if
+end
+switch
+if
+end
+end
+next
+
+
+:TPS2
+in
+
+:TPS3
+in
+
+
+:SPECIFICATIONS
+Reverse the input.
+The string ends with the 
+unique token "END".

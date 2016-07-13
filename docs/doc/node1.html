@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Architecture</TITLE>
+<META NAME="description" CONTENT="Architecture">
+<META NAME="keywords" CONTENT="doc">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="doc.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="doc.html">
+<LINK REL="up" HREF="doc.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html15"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/opt/local/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html13"
+  HREF="doc.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/opt/local/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html7"
+  HREF="doc.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/opt/local/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html16"
+  HREF="node2.html">Instructions</A>
+<B> Up:</B> <A NAME="tex2html14"
+  HREF="doc.html">Token Processing System Manual</A>
+<B> Previous:</B> <A NAME="tex2html8"
+  HREF="doc.html">Token Processing System Manual</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00010000000000000000">
+Architecture</A>
+</H1>
+
+<P>
+The <SPAN  CLASS="textit">TPS-5</SPAN> is a versatile system for manipulating tokens.   It can store in total 224 tokens, divided into seven buffers of 32 tokens each.  
+
+<P>
+There are seven buffers - one (<SPAN  CLASS="textit">DATA</SPAN>) is for public input/output, to be read by external software, the remaining six are private buffers for your programs.  Three (<SPAN  CLASS="textit">TPS#1</SPAN>,<SPAN  CLASS="textit">TPS#2</SPAN>,<SPAN  CLASS="textit">TPS#3</SPAN>) are where you will write your code, and the other three (<SPAN  CLASS="textit">STACK#1</SPAN>,<SPAN  CLASS="textit">STACK#2</SPAN>,<SPAN  CLASS="textit">STACK#3</SPAN>) are stacks for temporary storage.  All six of the interal buffers have individual TPS microcontrollers.
+
+<P>
+A TPS microcontroller has access to three buffers - data, script, and stack.  At any one time only one TPS microcontroller can be active - a TPS microcontroller can give control to the TPS that runs on its data buffer (if there is one - DATA is not interpreted by any microcontroller), or it can relinquish control back its parent controller. The controller supports 16 instructions.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Stephen Lavelle
+2016-07-12
+</ADDRESS>
+</BODY>
+</HTML>

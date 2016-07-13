@@ -1,0 +1,43 @@
+:DATA
+a
+a
+b
+c
+a
+c
+c
+c
+a
+c
+d
+end
+
+:TPS1
+ifn
+end
+end
+if
+a
+remove
+ifn
+a
+next
+
+:TPS2
+next
+next
+next
+push
+top
+remove
+pop
+in
+
+:TPS3
+in
+
+
+:SPECIFICATIONS
+Remove all 'A's.
+String ends with END.
+Don't manually edit TPS1.

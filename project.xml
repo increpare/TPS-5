@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	<meta 
-    title="Drawing Images" 
-    package="com.haxegon.drawingimages" 
+    title="TPS-5" 
+    package="com.increpare.tps5" 
     version="1.0.0" 
-    company="Your name here" 
+    company="increpare games" 
   />
 
 	<app 

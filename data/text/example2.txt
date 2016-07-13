@@ -32,4 +32,4 @@ in
 in
 
 :SPECIFICATIONS
-Remove profanity from the data.
+Remove profanity from the data

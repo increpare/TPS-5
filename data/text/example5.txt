@@ -1,0 +1,36 @@
+:DATA
+a
+b
+c
+d
+c
+e
+f
+g
+c
+c
+d
+c
+end
+
+:TPS1
+push
+pop
+if
+end
+end
+next
+next
+
+
+:TPS2
+in
+
+:TPS3
+in
+
+
+:SPECIFICATIONS
+Duplicate every token
+ab->aabb
+The string ends with END.

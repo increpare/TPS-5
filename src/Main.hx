@@ -70,6 +70,10 @@ class Main {
 			simulator.tick();
 			stepCount++;
 		}
+
+		if (Input.justpressed(Key.H)){
+			Browser.window.open("docs/",'_blank');
+		}
 		if (Input.justpressed(Key.L)){
 			var s = Browser.window.prompt("input text","blah");
 			Load(s);
@@ -137,45 +141,18 @@ class Main {
 		simulator.curTarget == tableIndex ? 0xff00ff:0xaa00aa);
 
 
-	if (thisTPS!=null){
-		if (thisTPS.state == State.If || thisTPS.state == State.While
-			|| thisTPS.state == State.IfN || thisTPS.state == State.WhileN) {
-			var cp = (cursorPos-1+buffer.length)%buffer.length;
-			Gfx.fillbox(
-				startx-marginH+Math.floor(cp/16)*(boxWidth/2+marginH+1),
-				starty+textHeight+letterSpaceV+3-marginV
-					+(textHeight+letterSpaceV)*(cp%16),
-				boxWidth/2+marginH,
-				textHeight+2*marginV-2, 
-				0x00aaaa);
-		} else if (thisTPS.state == State.While2 || thisTPS.state == State.While2N){
-			var cp = (cursorPos-1+buffer.length)%buffer.length;
-			Gfx.fillbox(
-				startx-marginH+Math.floor(cp/16)*(boxWidth/2+marginH+1),
-				starty+textHeight+letterSpaceV+3-marginV
-					+(textHeight+letterSpaceV)*(cp%16),
-				boxWidth/2+marginH,
-				textHeight+2*marginV-2, 
-				0x00aaaa);
-			var cp = cursorPos;
-			Gfx.fillbox(
-				startx-marginH+Math.floor(cp/16)*(boxWidth/2+marginH+1),
-				starty+textHeight+letterSpaceV+3-marginV
-					+(textHeight+letterSpaceV)*(cp%16),
-				boxWidth/2+marginH,
-				textHeight+2*marginV-2, 
-				0x00aa00);
-
-			var cp = (cursorPos+1)%buffer.length;
-			Gfx.fillbox(
-				startx-marginH+Math.floor(cp/16)*(boxWidth/2+marginH+1),
-				starty+textHeight+letterSpaceV+3-marginV
-					+(textHeight+letterSpaceV)*(cp%16),
-				boxWidth/2+marginH,
-				textHeight+2*marginV-2, 
-				simulator.curTarget == tableIndex ? 0xff00ff:0xaa00aa);
-
-		}
+	if (thisTPS!=null 
+		&& (thisTPS.script.get(cursorPos)=="IF" 
+			||thisTPS.script.get(cursorPos)=="IFN" ))
+	{
+		var cp = (cursorPos+1)%buffer.length;
+		Gfx.fillbox(
+			startx-marginH+Math.floor(cp/16)*(boxWidth/2+marginH+1),
+			starty+textHeight+letterSpaceV+3-marginV
+				+(textHeight+letterSpaceV)*(cp%16),
+			boxWidth/2+marginH,
+			textHeight+2*marginV-2, 
+			simulator.curTarget == tableIndex ? 0x00aaaa:0x005555);	
 	}
 	
 	cursorPos = buffer.storedPos;
@@ -253,6 +230,12 @@ class Main {
 		simulator.data.toString()[0],
 		Col.WHITE);
 
+	Text.display(
+		startx,
+		starty+(textHeight+letterSpaceV)*17+3,
+		simulator.data.toString()[1],
+		Col.WHITE);
+
 
 	startx += dataBoxWidth+marginH*5+3;
 
@@ -292,9 +275,7 @@ class Main {
 				starty+7*(textHeight+letterSpaceV)+3,			
 				String.fromCharCode(6),
 				Col.WHITE);
-		}
-		if (simulator.tps[0].state != State.Regular){
-			Text.display(
+		 	Text.display(
 				startx-marginH*3-3,
 				starty+9*(textHeight+letterSpaceV)+3,			
 				String.fromCharCode(6),
@@ -389,7 +370,7 @@ class Main {
 	Text.display(
 		startx,
 		starty+3,
-		"MESSAGE CONSOLE V 0.1",
+		"MESSAGE CONSOLE V 0.1\nPress/hold X to tick \ninterpreter.\nPress L to load external \nfile.\nPress H to open help page\n(or go to /docs/ manually if\nthat doesn't work).",
 		Col.WHITE);
 
 		Text.display(startx,starty+scriptBoxHeight+3*marginV,"MESSAGES",Col.WHITE);
