@@ -1,9 +1,9 @@
 Work in progress maybe programming game thing...
 
-try out prototype here:
+Try out prototype here:
 https://ded.increpare.com/~locus/tps5/
 
-(rough!) documentation here:
+(Rough!) documentation here:
 https://ded.increpare.com/~locus/tps5/docs
 
-feedback welcome analytic@gmail.com
+Feedback welcome analytic@gmail.com
